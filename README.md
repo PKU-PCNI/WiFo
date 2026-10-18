@@ -21,6 +21,7 @@ The dataset used for pre-training is available in [[Pretraining Dataset]](https:
 
 ## Get Started
 We have released the pre-trained weights of WiFo-Large/Base/Small/Little/Tiny for inference in [[Model](https://huggingface.co/liuboxun/WiFo)].
+**Note**: For the large model variant, both the encoder and decoder Transformers use **12** attention heads, rather than the 8 heads stated in the paper.
 
 ### Inference command for multi-dataset unified learning
 ```
