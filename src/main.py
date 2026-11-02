@@ -111,7 +111,7 @@ def main():
     total_params = sum(p.numel() for p in model.parameters())
     print(f'Total number of parameters: {total_params}')
     if args.file_load_path != '':
-        model.load_state_dict(torch.load('{}.pkl'.format(args.file_load_path),map_location=device), strict=False)
+        model.load_state_dict(torch.load('{}.pkl'.format(args.file_load_path),map_location=device, weights_only=True), strict=False)
         print('pretrained model loaded'+args.file_load_path)
     TrainLoop(
         args=args,
